@@ -1,4 +1,4 @@
 lastIndexOf
 =======
 
-lastIndexOf for the browser and node.js
+returns the last index of the value

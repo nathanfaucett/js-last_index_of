@@ -1,12 +1,12 @@
-var isLength = require("is_length"),
-    isObjectLike = require("is_object_like");
+var isLength = require("@nathanfaucett/is_length"),
+    isObject = require("@nathanfaucett/is_object");
 
 
 module.exports = lastIndexOf;
 
 
 function lastIndexOf(array, value, fromIndex) {
-    return (isObjectLike(array) && isLength(array.length)) ? arrayLastIndexOf(array, value, fromIndex || 0) : -1;
+    return (isObject(array) && isLength(array.length)) ? arrayLastIndexOf(array, value, fromIndex || 0) : -1;
 }
 
 function arrayLastIndexOf(array, value, fromIndex) {
